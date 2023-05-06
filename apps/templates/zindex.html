@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.box{
+			position: relative;
+			min-width: 250px;
+			min-height: 500px;
+			height: 150px;
+			border: 5px solid #222;
+			padding: 10px;
+			box-shadow: -4px 6px 6px 3px #000;
+			margin: 0px auto;
+			background: #eee;
+			border-radius: 15px;
+		}
+
+		.div1{
+			z-index: 1;
+			position: absolute;
+			top: 40px;
+			left: 20px;
+			width: 300px;
+			height: 50px;
+			background: #2b63ff;
+			border: 3px solid #566cff;
+		}
+
+		.div2{
+			z-index: 2;
+			position: absolute;
+			top: 50px;
+			left: 30px;
+			width: 200px;
+			height: 60px;
+			background: orange;
+			border: 3px solid #ffd79d;
+		}
+
+		.div3{
+			position: absolute;
+			top: 60px;
+			left: 40px;
+			width: 100px;
+			height: 70px;
+			background: #008057;
+			border: 3px solid #40b6bb;
+		}
+
+		body {
+  			font-family:"Microsoft JhengHei",sans-serif;
+  			background:#1b254a;
+		}
+
+		h3 {
+  			margin-top:0;
+		}
+		.div1,.div2,.div3{
+			padding-right:5px;
+			text-align:right;
+			color:#000;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h3>box</h3>
+		<div class="div1">div1</div>		
+		<div class="div2">div2</div>
+		<div class="div3">div3</div>
+	</div>
+</body>
+</html>

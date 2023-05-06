@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body style="height: 1500px;">
+	<!--position - 1 -->
+	<h1>css教學</h1>
+	<div style="position: fixed; bottom:20px; right:20px; width: 80px; height: 80px; background-color: blue;"></div>
+	<div style="width: 120px; height: 120px; background-color: red;">1</div>
+
+	<!--position - 2 relative 對原本應該出現的位置產生相對位移, 有設定相對定的元素會蓋過沒設定相對定位的元素-->
+	<h1>css教學</h1>
+	<div style="position: relative; top: 10px;  left: 30px; width: 80px; height: 80px; background-color: blue;"></div>
+	<div style="width: 120px; height: 120px; background-color: red;">2</div>
+
+	<!--position - 1 -->
+	<div style="position: relative; padding: 30px; border: 5px solid red; ">
+		<div style="padding: 30px; border: 5px solid red;">
+			<div style="position: absolute; top: 0px; right: 0px; width: 40px; height: 40px; background-color: blue;">3
+				<!--position absolute 會自成一層-->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
